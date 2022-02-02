@@ -10,6 +10,7 @@
     {"id":{"name":"oFlag","path":"objects/oFlag/oFlag.yy",},"order":9,},
     {"id":{"name":"oEnemyFollow","path":"objects/oEnemyFollow/oEnemyFollow.yy",},"order":8,},
     {"id":{"name":"oTurret","path":"objects/oTurret/oTurret.yy",},"order":5,},
+    {"id":{"name":"mmm","path":"objects/mmm/mmm.yy",},"order":4,},
     {"id":{"name":"oProjectlie","path":"objects/oProjectlie/oProjectlie.yy",},"order":6,},
     {"id":{"name":"oEnemyPatrol","path":"objects/oEnemyPatrol/oEnemyPatrol.yy",},"order":7,},
     {"id":{"name":"EnemyHurt","path":"scripts/EnemyHurt/EnemyHurt.yy",},"order":1,},
