@@ -63,3 +63,10 @@ if (levelTimer < 0)
 {
 room_restart();
 }
+
+
+//projectile
+if (keyboard_check_pressed(vk_rshift))
+{
+	instance_create_layer(x,y, "instances", oProjectilePlayer)
+}

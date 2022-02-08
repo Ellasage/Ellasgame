@@ -15,7 +15,7 @@ function EnemyHurt()
 
 function EnemyDeath()
 {
-	instance_destroy(other)
+	instance_destroy(self)
 	if (random_range(0,10) > 4)
 		{
 			instance_create_layer(other.x, other.y, "Instances", oCoin);
