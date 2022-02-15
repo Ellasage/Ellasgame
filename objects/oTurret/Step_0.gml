@@ -7,6 +7,6 @@ if (shotTimer < 0)
 	with (bullet)
 	{
 		speed = 6;
-		direction = point_direction(x, y, oPlayer.x, oPlayer.y)
+		direction = point_direction(x, y, other.x, other.y)
 	}
 }

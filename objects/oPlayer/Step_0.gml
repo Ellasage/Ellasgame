@@ -1,4 +1,19 @@
 //code that runs ever frame
+
+if isInvincible
+{
+	invTimer -= 1/room_speed
+	if invTimer <=0
+	{
+		isInvincible = false;
+		invTimer = 2;
+	}
+}
+
+
+
+
+
 right = keyboard_check(vk_right);
 left = keyboard_check(vk_left);
 jump = keyboard_check_pressed(vk_space);

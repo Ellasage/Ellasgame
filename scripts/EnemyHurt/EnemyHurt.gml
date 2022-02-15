@@ -4,8 +4,8 @@ function EnemyHurt()
 	if (!other.isInvincible)
 	{
 		isInvincible = true;
-		other.hp --;
-		if (other.hp <1)
+		self.hp --;
+		if (self.hp <1)
 		{
 			EnemyDeath();
 		}
