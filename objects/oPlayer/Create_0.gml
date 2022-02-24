@@ -30,3 +30,5 @@ levelTimer = 100
 //invincibility timer
 invTimer = 2;
 
+enterShip = false;
+enteredShip = false;

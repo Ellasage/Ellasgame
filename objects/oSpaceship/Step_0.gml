@@ -1,33 +1,28 @@
-//code that runs ever frame
-
-if isInvincible
-{
-	invTimer -= 1/room_speed
-	if invTimer <=0
-	{
-		isInvincible = false;
-		invTimer = 2;
-	}
-}
-
-
-
-
-
-right = keyboard_check(vk_right);
-left = keyboard_check(vk_left);
-jump = keyboard_check_pressed(vk_space);
-
-//what directon player is moving
+//movement
 xDirection = right - left;
 
 //speed & directon player is moving at
 xVector = xDirection * xSpeed;
-yVector = yVector + grv;
 
-//position and movemtn of player
+xSpeed = 4;
 
-//check to see if there is an oWall to the left or right of my oPlayer, if there is stop movement and if there isnt continue to move as normal
+//what direction the player is facing (wherre 1 = rigth, -1 = left. 0 = front or not moving)
+xDirection = 0;
+
+//how fast and what direction player is moving
+xVector = xSpeed * xDirection;
+
+
+right = keyboard_check(vk_right);
+left = keyboard_check(vk_left);
+up = keyboard_check(vk_up);
+down = keyboard_check(vk_down);
+
+ydirection = up - down
+yVector = grv * yDirection
+xDirection = right - left
+xVector = xSpeed * xDirection
+
 if (place_meeting(x +xVector, y , oWall))
 	{
 		//check 1 pixel in the desired xDirectoin until we hit a wall 
@@ -40,10 +35,19 @@ if (place_meeting(x +xVector, y , oWall))
 			//otherwise if you are coming in contact with the wall ad should stop
 			xVector = 0;
 	}
-
 //otherwise move as normal
 x = x + xVector;
-
+	
+	
+if isInvincible
+{
+	invTimer -= 1/room_speed
+	if invTimer <=0
+	{
+		isInvincible = false;
+		invTimer = 2;
+	}
+}
 if (place_meeting(x, y + yVector, oWall))
 	{
 		//check 1 pixel in the desired yDirectoin until we hit a wall 
@@ -57,26 +61,4 @@ if (place_meeting(x, y + yVector, oWall))
 		}
 		yVector = 0;
 	}
-	//otherwise move as normal
 y = y + yVector;
-
-//if we are touching the ground and we press jump fly like an eagle
-if (place_meeting(x, y + 1, oWall)) and (jump)
-{
-	yVector = jumpForce;
-}
-
-//die in a pit 
-if (y >=  room_height)
-
-{
-playerDeath();
-}
-
-
-
-//projectile
-if (keyboard_check_pressed(vk_rshift))
-{
-	instance_create_layer(x,y, "instances", oProjectilePlayer)
-}
