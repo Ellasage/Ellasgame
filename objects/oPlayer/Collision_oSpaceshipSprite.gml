@@ -4,7 +4,7 @@ enterShip = true
 
 if enterShip and keyboard_check(vk_enter)
 {
-	enteredShip = true'
+	enteredShip = true
 	instance_change(oSpaceship, true);
 	instance_destroy(other)
 	

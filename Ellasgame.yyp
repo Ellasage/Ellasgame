@@ -1,6 +1,8 @@
 {
   "resources": [
+    {"id":{"name":"CheckInputs","path":"scripts/CheckInputs/CheckInputs.yy",},"order":3,},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},"order":15,},
+    {"id":{"name":"StatePlayerWalking","path":"scripts/StatePlayerWalking/StatePlayerWalking.yy",},"order":4,},
     {"id":{"name":"Sprite11","path":"sprites/Sprite11/Sprite11.yy",},"order":21,},
     {"id":{"name":"Sprite10","path":"sprites/Sprite10/Sprite10.yy",},"order":4,},
     {"id":{"name":"PlayerHurt","path":"scripts/PlayerHurt/PlayerHurt.yy",},"order":0,},
@@ -13,7 +15,9 @@
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":0,},
     {"id":{"name":"oFlag","path":"objects/oFlag/oFlag.yy",},"order":9,},
     {"id":{"name":"oEnemyFollow","path":"objects/oEnemyFollow/oEnemyFollow.yy",},"order":8,},
+    {"id":{"name":"CheckCollisions","path":"scripts/CheckCollisions/CheckCollisions.yy",},"order":2,},
     {"id":{"name":"oTurret","path":"objects/oTurret/oTurret.yy",},"order":5,},
+    {"id":{"name":"StatePlayerJumping","path":"scripts/StatePlayerJumping/StatePlayerJumping.yy",},"order":5,},
     {"id":{"name":"oSpaceship","path":"objects/oSpaceship/oSpaceship.yy",},"order":12,},
     {"id":{"name":"oProjectlie","path":"objects/oProjectlie/oProjectlie.yy",},"order":6,},
     {"id":{"name":"oEnemyPatrol","path":"objects/oEnemyPatrol/oEnemyPatrol.yy",},"order":7,},

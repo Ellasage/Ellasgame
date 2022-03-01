@@ -18,7 +18,7 @@ left = keyboard_check(vk_left);
 up = keyboard_check(vk_up);
 down = keyboard_check(vk_down);
 
-ydirection = up - down
+yDirection = up - down
 yVector = grv * yDirection
 xDirection = right - left
 xVector = xSpeed * xDirection
@@ -61,4 +61,4 @@ if (place_meeting(x, y + yVector, oWall))
 		}
 		yVector = 0;
 	}
-y = y + yVector;
+y = y + yVector + grv;
